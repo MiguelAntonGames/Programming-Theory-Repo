@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
-    [SerializeField] private AudioSource _sfxSource;
+    [SerializeField] private AudioSource sfxSource;
     public static AudioManager Instance { get; private set; }
 
     protected virtual void Awake() {
@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour {
     }
 
     public void PlayClip(AudioClip clip) {
-        _sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip);
     }
 
 }

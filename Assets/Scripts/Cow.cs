@@ -4,7 +4,7 @@ using UnityEngine;
 
 // INHERITANCE
 public class Cow : Animal {
-    [SerializeField] private AudioClip _talkSound;
+    [SerializeField] private AudioClip talkSound;
     private const float JUMP_FORCE = 70f;
     private const string TALKING_MESSAGE = "MOO!";
 
@@ -19,7 +19,7 @@ public class Cow : Animal {
     // POLYMORPHISM
     public override void Talk() {
         OnTalk?.Invoke(TALKING_MESSAGE);
-        AudioManager.Instance.PlayClip(_talkSound);
+        AudioManager.Instance.PlayClip(talkSound);
     }
 
     private void OnCollisionEnter(Collision collision) {

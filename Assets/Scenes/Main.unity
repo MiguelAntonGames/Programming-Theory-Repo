@@ -3798,7 +3798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4480af13c0cbe754f81359b00397993a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sfxSource: {fileID: 2116519185}
+  sfxSource: {fileID: 2116519185}
 --- !u!4 &2116519187
 Transform:
   m_ObjectHideFlags: 0
